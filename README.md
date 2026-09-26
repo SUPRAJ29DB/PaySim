@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # PaySim
 
 PaySim is a **local payment and wallet simulator** for learning and demonstration. It is not connected to NPCI, UPI rails, banks, or real payment settlement. All balances and transactions are simulated.
@@ -39,3 +40,6 @@ The required PDO driver must be enabled for the configured database.
 ## Security note
 
 This codebase is a learning simulator, not production payment software. Before exposing it to a network, review authentication, authorization, CSRF protection, session handling, payment consistency, error handling, and secrets management. Never use real bank credentials, real payment data, or real funds.
+=======
+# PaySim
+>>>>>>> d0854dcdc149aab8817eb0186450e7b370dc3e22
