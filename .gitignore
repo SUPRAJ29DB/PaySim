@@ -1,0 +1,20 @@
+# Environment / secrets
+.env
+.env.*
+!.env.example
+
+# Dependencies (install with Composer)
+/vendor/
+
+# Runtime and generated data
+/logs/*.log
+/sql/*.sqlite
+/uploads/profile/*
+!/uploads/profile/.gitkeep
+
+# OS / editor
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
+.idea/

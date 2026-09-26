@@ -1,0 +1,15 @@
+Options -Indexes
+
+<IfModule mod_headers.c>
+    Header always set X-Content-Type-Options "nosniff"
+    Header always set X-Frame-Options "DENY"
+    Header always set Referrer-Policy "strict-origin-when-cross-origin"
+</IfModule>
+
+# Deny access to configuration, secrets, logs, database files, and source metadata.
+<FilesMatch "^(\.env(\..*)?|composer\.(json|lock)|.*\.(sqlite|log|sql)|\.gitignore)$">
+    Require all denied
+</FilesMatch>
+
+RedirectMatch 404 ^/\.git(?:/|$)
+RedirectMatch 404 ^/(?:config|models|services|utils|middleware|sql|logs|tests|vendor)/

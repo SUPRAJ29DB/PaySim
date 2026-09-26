@@ -1,0 +1,99 @@
+/**
+ * PaySim - Transactions & Receipt Stylesheet
+ */
+
+.txn-table-container {
+    background: var(--bg-card);
+    border: 1px solid var(--border-subtle);
+    border-radius: var(--radius);
+    overflow: hidden;
+}
+
+.txn-table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+}
+
+.txn-table th {
+    background: rgba(255, 255, 255, 0.02);
+    padding: 16px 20px;
+    font-size: 0.78rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: var(--text-muted);
+    border-bottom: 1px solid var(--border-subtle);
+}
+
+.txn-table td {
+    padding: 16px 20px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.04);
+    font-size: 0.9rem;
+    color: var(--text-primary);
+}
+
+.txn-table tr:hover td {
+    background: rgba(255, 255, 255, 0.02);
+}
+
+.badge-status {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 4px 10px;
+    border-radius: 20px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+
+.badge-status--completed {
+    background: var(--success-bg);
+    color: var(--success);
+    border: 1px solid var(--success-border);
+}
+
+.badge-status--pending {
+    background: var(--warning-bg);
+    color: var(--warning);
+    border: 1px solid var(--warning-border);
+}
+
+.badge-status--failed {
+    background: var(--error-bg);
+    color: var(--error);
+    border: 1px solid var(--error-border);
+}
+
+/* Receipt Styles */
+.receipt-card {
+    max-width: 520px;
+    margin: 40px auto;
+    background: #0d1222;
+    border: 1px dashed var(--border);
+    border-radius: var(--radius-lg);
+    padding: 36px;
+    position: relative;
+    box-shadow: 0 25px 60px rgba(0, 0, 0, 0.7);
+}
+
+.receipt-header {
+    text-align: center;
+    padding-bottom: 24px;
+    border-bottom: 1px dashed var(--border-subtle);
+    margin-bottom: 24px;
+}
+
+.receipt-row {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+}
+
+.receipt-row strong {
+    color: var(--text-primary);
+    font-family: var(--font-mono);
+}

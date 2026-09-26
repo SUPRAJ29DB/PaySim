@@ -1,0 +1,19 @@
+{
+  "name": "paysim/paysim",
+  "description": "PaySim virtual UPI and wallet payment simulator",
+  "type": "project",
+  "license": "MIT",
+  "require": {
+    "php": ">=8.1",
+    "ext-pdo": "*",
+    "ext-json": "*"
+  },
+  "suggest": {
+    "ext-pdo_mysql": "Required when using MySQL",
+    "ext-pdo_sqlite": "Required when using SQLite",
+    "ext-gd": "Useful for image and QR-related processing"
+  },
+  "autoload": {
+    "classmap": ["models/", "services/", "utils/", "middleware/"]
+  }
+}
